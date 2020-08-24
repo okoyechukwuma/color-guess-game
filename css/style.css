@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(20, 29, 41);
+    box-sizing: border-box;
+}
+
+.main-header{
+    background: cyan;
+}
+
+.header-display{
+    display: flex;
+    max-width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reset{
+    cursor: pointer;
+    text-transform: uppercase;
+   display: grid;
+   place-items: center;
+   height: 100%;
+}
+
+.header-display div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+}
+
+.easy{
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.easy, .hard{
+    cursor: pointer;
+}
+
+.easy:hover:not(.active),
+.hard:hover:not(.active),
+.reset:hover{
+    background: rgba(20, 29, 41, .5);
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.active{
+    background: rgb(20, 29, 41);
+    color: cyan;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0 5px;
+}
+
+.header-container{
+    width: 100%;
+    transition: all .6s ease-in-out;
+    margin: 0;
+}
+
+h1{
+    background: rgb(20, 29, 41);
+    color: cyan;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.square{
+    width: 30%;
+    background: blueviolet;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 50%;
+    transition: all .6s ease-in-out;
+}
